@@ -61,4 +61,14 @@ public class GeoServiceImplTests {
         Mockito.verify(geoService, Mockito.times(1))
                 .byIp(Mockito.<String>any());
     }
+    @Test()
+    void testExpectedException() {
+
+        RuntimeException thrown = Assertions.assertThrows(RuntimeException.class, () -> {
+            GeoServiceImpl exception = new GeoServiceImpl();
+            exception.byCoordinates(1, 1);
+        });
+
+        Assertions.assertEquals("Not implemented", thrown.getMessage());
+    }
 }
