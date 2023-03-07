@@ -1,4 +1,4 @@
-package ru.netology.sender;
+package ru.netology.sender.test;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -8,6 +8,7 @@ import ru.netology.entity.Location;
 import ru.netology.geo.GeoService;
 import ru.netology.geo.GeoServiceImpl;
 import ru.netology.i18n.LocalizationServiceImpl;
+import ru.netology.sender.MessageSenderImpl;
 
 import java.util.HashMap;
 
